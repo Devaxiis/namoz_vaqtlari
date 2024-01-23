@@ -49,7 +49,7 @@ sealed class LNService {
   }
 
   static Future<void> sendNotification(String title, String body) async {
-    await flutterLocalNotificationsPlugin.show(0, title, body, details, payload: 'Data');
+    await flutterLocalNotificationsPlugin.show(2, title, body, details, payload: 'Data');
   }
 
 }
