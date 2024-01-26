@@ -1,20 +1,24 @@
 
 import 'package:flutter/material.dart';
-import 'package:local_notification/source/db.dart';
+import 'package:local_notification/src/presentation/ui/main_home_screen.dart';
+import 'package:local_notification/src/utils/resource/service_notification/servcie_notification.dart';
 
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
+
+
   await LNService.settings();
-  runApp( MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-   MyApp({super.key});
+   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:  HomeScreen(),
+      debugShowCheckedModeBanner: false,
+      home: MainHomeScreen(),
     );
   }
 }
