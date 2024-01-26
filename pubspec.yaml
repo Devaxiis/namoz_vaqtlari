@@ -1,7 +1,7 @@
 name: local_notification
 description: "A new Flutter project."
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 
 
 version: 1.0.0+1
@@ -17,8 +17,30 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
-  firebase_messaging: ^14.7.10
-  firebase_core: ^2.24.2
+  ionicons: ^0.2.2
+
+  #Firebase messaging
+  #firebase_messaging: ^14.7.10
+  #firebase_core: ^2.24.2
+
+  #network connection
+  retrofit: ^4.0.3
+  dio: ^5.4.0
+
+  #state managemant
+  flutter_bloc: ^8.1.3
+  bloc: ^8.1.2
+
+  #equatable
+  equatable: ^2.0.5
+
+  #Dependency injection
+  get_it: ^7.6.7
+
+  #others
+  google_fonts: ^6.1.0
+  google_nav_bar: ^5.0.6
+  auto_route: ^7.8.4
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +49,9 @@ dev_dependencies:
 
   flutter_lints: ^2.0.0
   flutter_local_notifications: ^16.3.1+1
+  retrofit_generator: ^8.0.6
+  auto_route_generator: ^7.3.2
+  build_runner: ^2.4.8
 
 
 flutter:
